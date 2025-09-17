@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lidia — Portfolio profesional</title>
+  <!-- Preload fuentes críticas -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap"></noscript>
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Meta para SEO y redes sociales -->
+  <meta name="description" content="Portfolio profesional de Lidia — Diseño UX/UI, desarrollo front-end y proyectos destacados.">
+  <meta property="og:title" content="Lidia — Portfolio profesional">
+  <meta property="og:description" content="Diseñadora y desarrolladora front-end con más de 6 años de experiencia en proyectos digitales.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tudominio.com">
+  <meta property="og:image" content="https://tudominio.com/assets/lidia.png">
+</head>
+<body>
+  <!-- Modo oscuro controlado por checkbox CSS -->
+  <input class="theme-toggle" id="theme-toggle" type="checkbox" aria-label="Alternar tema oscuro" />
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="#" aria-label="Inicio — Portfolio de Lidia">
+        <img src="/assets/logo.svg" alt="" class="brand-logo" aria-hidden="true" width="32" height="32">
+        <span class="brand-text">Lidia<span class="brand-highlight">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Menú principal">
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Skills</a>
+        <a href="#cv">CV</a>
+        <a href="#contact" class="cta">Contactar</a>
+      </nav>
+      <label for="theme-toggle" class="theme-button" title="Cambiar tema" aria-hidden="false">
+        <span class="sun" aria-hidden="true">☀️</span>
+        <span class="moon" aria-hidden="true">🌙</span>
+      </label>
+    </div>
+  </header>
+  <main class="container">
+    <!-- Hero / presentación -->
+    <section id="about" class="hero">
+      <div class="hero-grid">
+        <div class="hero-card">
+          <div class="eyebrow">Diseñadora &amp; Desarrolladora</div>
+          <h1 class="hero-title">Hola — soy <span class="accent">Lidia</span></h1>
+          <p class="hero-desc">
+            Transformo ideas en experiencias digitales. Especializada en diseño de interfaces, prototipado y front-end.
+            Aquí encontrarás mi CV, proyectos seleccionados y recursos para contactarme.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Ver proyectos</a>
+            <a class="btn ghost" href="/assets/Lidia-CV.pdf" download rel="noopener noreferrer">Descargar CV</a>
+          </div>
+          <ul class="quick-stats" role="list">
+            <li><strong>+6</strong> años experiencia</li>
+            <li><strong>20+</strong> proyectos</li>
+            <li><strong>Remoto</strong> / híbrido</li>
+          </ul>
+        </div>
+        <aside class="photo-frame" aria-hidden="false">
+          <img src="/assets/lidia.png" alt="Foto profesional de Lidia" class="profile-photo" width="360" height="360" loading="lazy">
+          <div class="photo-overlay">
+            <div class="overlay-meta">
+              <span>Interés:</span>
+              <strong>UX, Front-end, Ilustración</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <!-- Proyectos -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2>Proyectos destacados</h2>
+        <p class="muted">Una selección de trabajos con resultados reales — haz click para ver detalles.</p>
+      </div>
+      <div class="projects-grid" role="list">
+        <article class="project-item" role="listitem">
+          <figure class="project-media">
+            <img src="/assets/project-1.jpg" alt="Mockup del proyecto 1: Webapp de gestión" loading="lazy" width="400" height="225">
+            <figcaption class="project-tag">Webapp · 2024</figcaption>
+          </figure>
+          <div class="project-body">
+            <h3 class="project-title">Nombre del proyecto 1</h3>
+            <p class="project-desc">Breve descripción del proyecto, rol y tecnologías usadas. Incluye métricas si las hay.</p>
+            <div class="project-meta">
+              <span>React</span>
+              <span>Figma</span>
+              <span>API</span>
+            </div>
+            <a class="project-link" href="#" aria-label="Ver detalles del proyecto 1">Ver detalles →</a>
+          </div>
+        </article>
+        <article class="project-item" role="listitem">
+          <figure class="project-media">
+            <img src="/assets/project-2.jpg" alt="Mockup del proyecto 2: Branding corporativo" loading="lazy" width="400" height="225">
+            <figcaption class="project-tag">Branding · 2023</figcaption>
+          </figure>
+          <div class="project-body">
+            <h3 class="project-title">Nombre del proyecto 2</h3>
+            <p class="project-desc">Rediseño de identidad visual y prototipado. Mejora de conversión +18%.</p>
+            <div class="project-meta">
+              <span>Illustrator</span>
+              <span>Figma</span>
+              <span>HTML</span>
+            </div>
+            <a class="project-link" href="#" aria-label="Ver detalles del proyecto 2">Ver detalles →</a>
+          </div>
+        </article>
+        <article class="project-item project-empty" role="listitem" aria-hidden="true">
+          <div class="project-empty-inner">Añadir proyecto</div>
+        </article>
+      </div>
+    </section>
+    <!-- Skills / herramientas -->
+    <section id="skills" class="section split">
+      <div class="split-col">
+        <h2>Habilidades</h2>
+        <p class="muted">Técnicas y de diseño con nivel estimado — modifica según el CV real.</p>
+        <ul class="skills-list" role="list">
+          <li><strong>UX/UI</strong> <span class="skill-level" data-level="90">90%</span></li>
+          <li><strong>HTML &amp; CSS</strong> <span class="skill-level" data-level="95">95%</span></li>
+          <li><strong>JavaScript</strong> <span class="skill-level" data-level="80">80%</span></li>
+          <li><strong>Figma</strong> <span class="skill-level" data-level="92">92%</span></li>
+          <li><strong>Comunicación</strong> <span class="skill-level" data-level="88">88%</span></li>
+        </ul>
+      </div>
+      <div class="split-col">
+        <h2>Experiencia</h2>
+        <ol class="timeline" role="list">
+          <li>
+            <time datetime="2021">2021 — Presente</time>
+            <strong>Senior Designer</strong>
+            <p class="muted">Compañía ABC — diseño de productos y coordinación de equipo.</p>
+          </li>
+          <li>
+            <time datetime="2018">2018 — 2021</time>
+            <strong>Frontend Developer</strong>
+            <p class="muted">Startup XYZ — desarrollo de interfaces y componentes reutilizables.</p>
+          </li>
+          <li>
+            <time datetime="2016">2016 — 2018</time>
+            <strong>Junior Designer</strong>
+            <p class="muted">Agencia 123 — branding y piezas digitales.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- CV / descarga e información -->
+    <section id="cv" class="section cv-section">
+      <div class="section-header">
+        <h2>Currículum</h2>
+        <p class="muted">Resumen público y enlace para descargar el CV completo.</p>
+      </div>
+      <div class="cv-grid">
+        <div class="cv-card">
+          <h3>Información</h3>
+          <ul class="info-list">
+            <li><strong>Nombre:</strong> Lidia Apellido</li>
+            <li><strong>Email:</strong> <a href="mailto:lidia@example.com">lidia@example.com</a></li>
+            <li><strong>Tel:</strong> <a href="tel:+34600000000">+34 600 000 000</a></li>
+            <li><strong>Ubicación:</strong> Madrid, España</li>
+            <li><strong>Disponibilidad:</strong> Inmediata / Proyecto</li>
+          </ul>
+          <a class="btn primary" href="/assets/Lidia-CV.pdf" download rel="noopener noreferrer">Descargar CV (PDF)</a>
+        </div>
+        <div class="cv-preview">
+          <h4>Resumen profesional</h4>
+          <p>Diseñadora con enfoque en crear productos digitales accesibles y escalables. Experiencia liderando equipos y entregando soluciones que mejoran KPIs.</p>
+          <dl class="cv-stats">
+            <div><dt>Proyectos liderados</dt><dd>12</dd></div>
+            <div><dt>Equipos</dt><dd>3–6 personas</dd></div>
+            <div><dt>Idiomas</dt><dd>ES (nativo), EN (avanzado)</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!-- Contacto / redes -->
+    <section id="contact" class="section contact">
+      <div class="section-header">
+        <h2>Contacto</h2>
+        <p class="muted">¿Quieres trabajar con Lidia? Escríbele o conéctate en redes.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="post" aria-label="Formulario de contacto">
+          <label>
+            <span>Nombre</span>
+            <input type="text" name="name" placeholder="Tu nombre" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="tu@ejemplo.com" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Mensaje</span>
+            <textarea name="message" rows="5" placeholder="Breve descripción del proyecto..." required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar mensaje</button>
+            <button type="reset" class="btn ghost">Borrar</button>
+          </div>
+        </form>
+        <aside class="contact-aside">
+          <div class="socials">
+            <a href="#" aria-label="Perfil LinkedIn" rel="noopener noreferrer">LinkedIn</a>
+            <a href="#" aria-label="Perfil Behance" rel="noopener noreferrer">Behance</a>
+            <a href="#" aria-label="Perfil GitHub" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:lidia@example.com" aria-label="Enviar email">Email</a>
+          </div>
+          <div class="availability">
+            <h4>Disponibilidad</h4>
+            <p class="muted">Freelance / Full-time — flexible</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Lidia — Portfolio. Diseñado por <strong>Tu nombre / Agencia</strong>.</p>
+      <nav class="footer-nav" aria-label="Enlaces de pie de página">
+        <a href="#cv">CV</a>
+        <a href="#contact">Contactar</a>
+        <a href="/assets/Lidia-CV.pdf" download rel="noopener noreferrer">Descargar CV</a>
+      </nav>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Año dinámico
+      document.getElementById('year').textContent = new Date().getFullYear();
+      // Tema oscuro (evita flash al cargar)
+      const themeToggle = document.getElementById('theme-toggle');
+      if (localStorage.getItem('theme') === 'dark') {
+        themeToggle.checked = true;
+      }
+      themeToggle.addEventListener('change', function() {
+        localStorage.setItem('theme', this.checked ? 'dark' : 'light');
+      });
+    });
+  </script>
+</body>
+</html>
